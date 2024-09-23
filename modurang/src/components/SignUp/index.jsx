@@ -86,7 +86,7 @@ const Login = () => {
       return
     }
     try {
-      const { data } = await axios.post(`https://7d60-2001-2d8-2051-3f41-fcee-2915-b92e-2830.ngrok-free.app/auth/signup`, {
+      const { data } = await axios.post(`${process.env.REACT_APP_API_URL}/auth/signup`, {
         username,
         password,
         studentNumber: StuNum
