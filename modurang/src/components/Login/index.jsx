@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
-  const [stuNum, setStuNum] = useState("")
+  const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [showPswd, setshowPswd] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -22,11 +22,11 @@ const Login = () => {
     e.preventDefault();
   }
 
-  const handleStuNumChange = (e) => {
-  const regex = /^[0-9]*$/;
+  const handleEmailChange = (e) => {
+  const regex = /^[A-Za-z0-9@.]*$/;
 
   if (regex.test(e.target.value)) {
-    setStuNum(e.target.value);
+    setEmail(e.target.value);
   }
   };
   
@@ -46,14 +46,14 @@ const Login = () => {
 
   const login = async () => {
     setLoading(true)
-    if (stuNum === "" || password ===""){
+    if (email === "" || password ===""){
       toast.error("학번 또는 비밀번호가 잘못 되었습니다")
       setLoading(false)
       return
     }
     try {
       const { data } = await axios.post(`${process.env.REACT_APP_API_URL}/auth/login`, {
-        studentNumber: stuNum,
+        email,
         password
       })
 
@@ -82,11 +82,10 @@ const Login = () => {
       <h1>로그인</h1>
       <input
     type="text"
-    onPaste={handleStuNumChange}
-    onChange={handleStuNumChange}
-    value={stuNum}
-    maxLength="4"
-    placeholder="학번"
+    onPaste={handleEmailChange}
+    onChange={handleEmailChange}
+    value={email}
+    placeholder="이메일"
   />
       <div className="passwordbox">
         <input type={showPswd ? "text" : "password"} onPaste={cancelPaste} onChange={handlePasswordChange} value={password} maxLength="200" placeholder="비밀번호" />
