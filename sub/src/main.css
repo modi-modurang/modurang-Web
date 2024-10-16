@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+  font-family: pretendard;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px; /* 1.5 times 10px */
+  margin: 10px 0; /* 1.5 times 10px */
+  box-sizing: border-box;
+  border-radius: 500px; /* 1.5 times 5px */
+  border: 2px solid #F4845F;
+}
+
+input[type="text"],
+input[type="password"]:focus {
+  border: 2px solid #F4845F;
+  outline: none;
+}
+
+input[type="button"]{
+  width: 20%;;
+  box-sizing: border-box;
+  border-radius: 500px; /* 1.5 times 5px */
+  border: 1px solid #ccc;
+  padding: 15px 0;
+  background-color: #efefef;
+  cursor: pointer;
+}
