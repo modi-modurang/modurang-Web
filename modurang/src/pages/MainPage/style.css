@@ -1,3 +1,63 @@
 .main{
     background-color: #F5F5F5;
+    height: 830px;
 } 
+.main > .container {
+    padding-left: 160px;
+    width: calc(100vw - 160px);
+    height: 100vh;
+}
+.main > .container > .button-menu{
+    display: flex;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 30px;
+}
+.main > .container > .button-menu > .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    width: 99px;
+    height: 99px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main > .container > .button-menu > .button > img {
+    width: 40px;
+    height: 40px;
+}
+.main > .container > .content {
+    float: left;
+    width: 486px;
+    height: 673px;
+    background-color: #FFFFFF;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.main > .container > .calander {
+    float: left;
+    position: relative;
+    bottom: 114px;
+    margin-left: 30px;
+    width: 735px;
+    height: 325px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.main > .container > .content2 {
+    position: relative;
+    left: 546px;
+    top: 235px;
+    width: 735px;
+    height: 439px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.selected{
+    background-color: red;
+}

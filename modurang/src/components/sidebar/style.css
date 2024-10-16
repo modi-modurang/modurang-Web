@@ -1,11 +1,20 @@
 .sidebar{
-    height: 100vh;
-    min-width: 100px;
-    width: 10vw;
+    position: fixed;
+    width: 160px;
+    height: 830px;
     background-color: white;
 }
-.sidebar>.logo{
-    width: 10vw;
-    
-    background-image: url(../../assets/images/Logo.svg);
+.sidebar> .logo> img {
+    width: 109px;
+    height: 34.92px;
+    margin-top: 23px;
+    margin-left: 26px;
+}
+.menu {
+    margin-top: 40px;
+    margin-left: 38px;
+    line-height: 36px;
+}
+.menu > .sidebar-button {
+    cursor: pointer;
 }
