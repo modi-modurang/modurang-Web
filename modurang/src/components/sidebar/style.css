@@ -17,4 +17,7 @@
 }
 .menu > .sidebar-button {
     cursor: pointer;
+    color: black;
+    text-decoration: none;
+    display: block;
 }

@@ -33,7 +33,7 @@ const Main = () => {
     }, []);
 
     return (
-        <div className='main'>
+        <div className='notice'>
             <Sidebar />
             <div className='container'>
                 <div className='title-container'>
