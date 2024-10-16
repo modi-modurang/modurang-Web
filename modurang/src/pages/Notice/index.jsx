@@ -13,7 +13,11 @@ const Main = () => {
         setLoading(true);
     
         try {
-            const { data } = await axios.get(`${process.env.REACT_APP_API_URL}/notice`);
+            const { data } = await axios.get(`${process.env.REACT_APP_API_URL}/notice`,{
+                headers:{
+                    "ngrok-skip-browser-warning" : encodeURIComponent("하하하"),
+                },
+            });
             console.log('API 응답:', data);  // API 응답을 출력하여 확인
             setAnnounce(data.data || []);  // data에서 바로 data.data에 접근
         } catch (e) {
