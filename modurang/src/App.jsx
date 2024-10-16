@@ -4,7 +4,6 @@ import Login from './pages/Login/index';
 import Signup from './pages/SignUpPage/index';
 import Notice from './pages/Notice/index';
 import Main from './pages/MainPage/index'
-
   
 function App() {
   useEffect(() => {
