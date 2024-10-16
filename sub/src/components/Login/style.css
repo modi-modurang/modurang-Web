@@ -1,0 +1,65 @@
+html {
+  font-size: 20px;
+}
+
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-container h1 {
+  font-size: 36px;
+  margin-top: 30px;
+  color: #F4845F;
+}
+
+.login-container .title {
+  margin: 5px 0;
+  font-size: 22px;
+}
+
+.login-container .noaccount{
+  margin: 10px;
+  font-size: 18px;
+}
+
+.login-container .signupbutton {
+  color: #F4845F;
+  text-decoration: none;
+  font-size: 1em; /* Adjust font size for the link */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.login-button {
+  width: 100%;
+  padding: 10px; /* 1.5 times 10px */
+  background-color: #F4845F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5000px; /* 1.5 times 5px */
+  font-size: 24px; /* 1.5 times 16px */
+  margin-top: 20px;
+}
+
+.login-button:hover {
+  background-color: #c96c4c;
+}
+
+.passwordbox{
+  position: relative;
+}
+.showpassword{
+  position:absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(./togglepassword.png);
+  background-size: contain;
+  top: 50%;
+  right: 1%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}

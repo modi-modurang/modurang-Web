@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import Login from '../../components/Login/index'
+import SignUp from '../../components/SignUp/index'
 
 const LoginPage = () => {
     return (
@@ -10,7 +10,7 @@ const LoginPage = () => {
                 </div>
                 <div className='rightbox'>
                     <div className='logincomp'>
-                        <Login/>
+                        <SignUp/>
                     </div>
                 </div>
             </div>
