@@ -60,7 +60,7 @@ const Login = () => {
       localStorage.setItem('accessToken', data.accessToken)
       localStorage.setItem('refreshToken', data.refreshToken)
 
-      navigate('/')
+      navigate('/main')
     } catch (e) {
       if (axios.isAxiosError(e)) {
         const code = e.response.data.code
