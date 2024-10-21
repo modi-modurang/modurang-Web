@@ -1,7 +1,7 @@
 .sidebar{
     position: fixed;
     width: 160px;
-    height: 830px;
+    height: 100vh;
     background-color: white;
 }
 .sidebar> .logo> img {
