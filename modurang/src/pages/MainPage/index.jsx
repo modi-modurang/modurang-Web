@@ -24,7 +24,7 @@ const Index = () => {
               </div>
               <div className='button' onClick={()=>{setSelected("project")}}>
                 <img src={selected === 'project' ? selectproject : project} alt='과제'/>
-                <p>과제목록</p>
+                <p>과제현황</p>
               </div>
               <div className='button' onClick={()=>{setSelected("scedule")}}>
                 <img src={selected === 'scedule' ? selectscedule : scedule} alt='일정'/>

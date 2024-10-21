@@ -20,40 +20,40 @@
     align-items: center;
     justify-content: center;
     line-height: 50px;
-    width: 99px;
-    height: 99px;
+    width: 6.7vw;
+    height: 11.9vh;
     background-color: #FFFFFF;
     border-radius: 10px;
     cursor: pointer;
 }
 .main > .container > .button-menu > .button > img {
-    width: 40px;
-    height: 40px;
+    width: 2.7vw;
+    height: 4.8vh;
 }
 .main > .container > .content {
     float: left;
-    width: 486px;
-    height: 673px;
+    width: 33vw;
+    height: 80.8vh ;
     background-color: #FFFFFF;
     margin-left: 30px;
     border-radius: 10px;
 }
 .main > .container > .calander {
-    float: left;
     position: relative;
+    left: 515px;
     bottom: 114px;
-    margin-left: 30px;
-    width: 735px;
-    height: 325px;
+    margin-left: 2vw;
+    width: 50vw;
+    height: 39vh;
     background-color: #FFFFFF;
     border-radius: 10px;
 }
 .main > .container > .content2 {
     position: relative;
+    bottom: 91px;
     left: 546px;
-    top: 235px;
-    width: 735px;
-    height: 439px;
+    width: 50vw;
+    height: 52.75vh;
     background-color: #fff;
     border-radius: 10px;
 }
